@@ -9,10 +9,10 @@ services:
     restart: always
     tty: true
     #expose:
-    #  - "8000"
-    #ports:
-    #  - "8040:8040"
-    #working_dir: '/root/'
+     # - "8040"
+    ports:
+      - "8040:8040"
+    working_dir: '/root/'
     volumes:
-      - /Users/tanakatouma/vscode/ds_mlops/fastapi/src/:/root/src/
+      - /Users/tanakatouma/vscode/fastapi-docker/src/:/root/src/
 #      - /Users/tanakatouma/Documents/Docker_volumes/ds_mlops/fastapi:/root/fastapi/
